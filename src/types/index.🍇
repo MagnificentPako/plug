@@ -1,3 +1,4 @@
+📗 Type representing a message (currently stripped down) 📗
 🕊 🖊 🍇
 
     🖍🆕 author    🔡
@@ -6,8 +7,11 @@
 
     🆕 🍼 author 🔡 🍼 content 🔡 🍼 channelId 🔡 🍇🍉
 
+    📗 Returns the author 📗
     ❓👤➡️🔡 🍇 ↩️author    🍉
+    📗 Returns the content 📗
     ❓💬➡️🔡 🍇 ↩️content   🍉
+    📗 Returns the channel ID 📗
     ❓🏠➡️🔡 🍇 ↩️channelId 🍉
 
 🍉

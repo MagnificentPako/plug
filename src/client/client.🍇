@@ -1,12 +1,14 @@
 📦 net 🏠️️️
 📜🔤../types/index.🍇🔤
 
+📗 Main class providing access to Discord API 📗
 🐇 🔌 🍇
 
     🖍🆕 token 🔡
     🖍🆕 handlers 🍯🐚🍨🐚🍇⚪🍉🍆🍆
     🖍🆕 http 🍑
 
+    📗 Construct a 🔌 from a token 📗
     🆕 🍼 token 🔡 🍇
         🆕🍯🐚🍨🐚🍇⚪🍉🍆🍆🐸❗️ ➡️ 🖍handlers
         🆕🍑🆕 🔤discordapp.com🔤 443❗️ ➡️ 🖍http
@@ -14,12 +16,17 @@
         🗣http 🔤User-Agent🔤 🔤Emojicord (https://github.com/MagnificentPako/plug, 1)🔤❗️
     🍉
 
+    📗 Send a message to a specific channel ID 📗
     ❗️ 🔈 channelId 🔡 msg 🔡 🍇
         📫http 🍪🔤/api/channels/🔤 channelId 🔤/messages🔤🍪
                🔤application/json🔤
                🍪🔤{"content":"🔤msg🔤"}🔤🍪❓
     🍉
 
+    📗 Add a callable as handler to a specific event. The callable
+       is always passed a ⚪️ and has to cast it to something useful depending
+       on the event.
+    📗
     ❗️ 💞 event 🔡 callable 🍇⚪🍉 🍇
         ↪️ ❎🐣handlers event❗️❗ 🍇
             🆕🍨🐚🍇⚪🍉🍆🐸❗️ ➡️ 🐽handlers event❗️
@@ -38,6 +45,7 @@
         🍉 
     🍉
 
+    📗 Starts the bot 📗
     ❗️ 🏃 🍇
         🔤wss://gateway.discord.gg/?v=6&encoding=json🔤 ➡️ wsuri
         🍪🔤
