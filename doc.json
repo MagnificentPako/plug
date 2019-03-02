@@ -1,0 +1,242 @@
+{
+    "types": [
+        {
+            "type": "Value Type",
+            "name": "🖊",
+            "conformances": [],
+            "genericParameters": [],
+            "documentation": " Type representing a message (currently stripped down) ",
+            "methods": [
+                {
+                    "name": "👤",
+                    "accessLevel": "🔓",
+                    "unsafe": false,
+                    "mutating": false,
+                    "final": false,
+                    "returnType": {
+                        "package": "s",
+                        "name": "🔡",
+                        "arguments": []
+                    },
+                    "mood": "❓",
+                    "genericParameters": [],
+                    "documentation": " Returns the author ",
+                    "parameters": []
+                },
+                {
+                    "name": "💬",
+                    "accessLevel": "🔓",
+                    "unsafe": false,
+                    "mutating": false,
+                    "final": false,
+                    "returnType": {
+                        "package": "s",
+                        "name": "🔡",
+                        "arguments": []
+                    },
+                    "mood": "❓",
+                    "genericParameters": [],
+                    "documentation": " Returns the content ",
+                    "parameters": []
+                },
+                {
+                    "name": "🏠",
+                    "accessLevel": "🔓",
+                    "unsafe": false,
+                    "mutating": false,
+                    "final": false,
+                    "returnType": {
+                        "package": "s",
+                        "name": "🔡",
+                        "arguments": []
+                    },
+                    "mood": "❓",
+                    "genericParameters": [],
+                    "documentation": " Returns the channel ID ",
+                    "parameters": []
+                }
+            ],
+            "initializers": [
+                {
+                    "name": "🆕",
+                    "accessLevel": "🔓",
+                    "unsafe": false,
+                    "mutating": true,
+                    "final": false,
+                    "genericParameters": [],
+                    "parameters": [
+                        {
+                            "type": {
+                                "package": "s",
+                                "name": "🔡",
+                                "arguments": []
+                            },
+                            "name": "author"
+                        },
+                        {
+                            "type": {
+                                "package": "s",
+                                "name": "🔡",
+                                "arguments": []
+                            },
+                            "name": "content"
+                        },
+                        {
+                            "type": {
+                                "package": "s",
+                                "name": "🔡",
+                                "arguments": []
+                            },
+                            "name": "channelId"
+                        }
+                    ]
+                }
+            ],
+            "typeMethods": []
+        },
+        {
+            "type": "Class",
+            "name": "🔌",
+            "conformances": [],
+            "genericParameters": [],
+            "documentation": " Main class providing access to Discord API ",
+            "methods": [
+                {
+                    "name": "🔈",
+                    "accessLevel": "🔓",
+                    "unsafe": false,
+                    "mutating": true,
+                    "final": false,
+                    "returnType": {
+                        "type": "NoReturn"
+                    },
+                    "mood": "❗️",
+                    "genericParameters": [],
+                    "documentation": " Send a message to a specific channel ID ",
+                    "parameters": [
+                        {
+                            "type": {
+                                "package": "s",
+                                "name": "🔡",
+                                "arguments": []
+                            },
+                            "name": "channelId"
+                        },
+                        {
+                            "type": {
+                                "package": "s",
+                                "name": "🔡",
+                                "arguments": []
+                            },
+                            "name": "msg"
+                        }
+                    ]
+                },
+                {
+                    "name": "💞",
+                    "accessLevel": "🔓",
+                    "unsafe": false,
+                    "mutating": true,
+                    "final": false,
+                    "returnType": {
+                        "type": "NoReturn"
+                    },
+                    "mood": "❗️",
+                    "genericParameters": [],
+                    "documentation": " Add a callable as handler to a specific event. The callable\n       is always passed a ⚪️ and has to cast it to something useful depending\n       on the event.\n    ",
+                    "parameters": [
+                        {
+                            "type": {
+                                "package": "s",
+                                "name": "🔡",
+                                "arguments": []
+                            },
+                            "name": "event"
+                        },
+                        {
+                            "type": {
+                                "type": "Callable",
+                                "arguments": [
+                                    {
+                                        "type": "NoReturn"
+                                    },
+                                    {
+                                        "type": "Literal",
+                                        "name": "⚪️"
+                                    }
+                                ]
+                            },
+                            "name": "callable"
+                        }
+                    ]
+                },
+                {
+                    "name": "🔥",
+                    "accessLevel": "🔐",
+                    "unsafe": false,
+                    "mutating": true,
+                    "final": false,
+                    "returnType": {
+                        "type": "NoReturn"
+                    },
+                    "mood": "❗️",
+                    "genericParameters": [],
+                    "parameters": [
+                        {
+                            "type": {
+                                "package": "s",
+                                "name": "🔡",
+                                "arguments": []
+                            },
+                            "name": "event"
+                        },
+                        {
+                            "type": {
+                                "type": "Literal",
+                                "name": "⚪️"
+                            },
+                            "name": "obj"
+                        }
+                    ]
+                },
+                {
+                    "name": "🏃",
+                    "accessLevel": "🔓",
+                    "unsafe": false,
+                    "mutating": true,
+                    "final": false,
+                    "returnType": {
+                        "type": "NoReturn"
+                    },
+                    "mood": "❗️",
+                    "genericParameters": [],
+                    "documentation": " Starts the bot ",
+                    "parameters": []
+                }
+            ],
+            "initializers": [
+                {
+                    "name": "🆕",
+                    "accessLevel": "🔓",
+                    "unsafe": false,
+                    "mutating": true,
+                    "final": false,
+                    "genericParameters": [],
+                    "documentation": " Construct a 🔌 from a token ",
+                    "parameters": [
+                        {
+                            "type": {
+                                "package": "s",
+                                "name": "🔡",
+                                "arguments": []
+                            },
+                            "name": "token"
+                        }
+                    ]
+                }
+            ],
+            "typeMethods": [],
+            "final": false
+        }
+    ]
+}
