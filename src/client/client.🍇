@@ -1,0 +1,94 @@
+📦 net 🏠️️️
+📜🔤../types/index.🍇🔤
+
+🐇 🔌 🍇
+
+    🖍🆕 token 🔡
+    🖍🆕 handlers 🍯🐚🍨🐚🍇⚪🍉🍆🍆
+    🖍🆕 http 🍑
+
+    🆕 🍼 token 🔡 🍇
+        🆕🍯🐚🍨🐚🍇⚪🍉🍆🍆🐸❗️ ➡️ 🖍handlers
+        🆕🍑🆕 🔤discordapp.com🔤 443❗️ ➡️ 🖍http
+        🗣http 🔤Authorization🔤 🍪🔤Bot 🔤 token🍪❗️
+        🗣http 🔤User-Agent🔤 🔤Emojicord (https://google.com, 1)🔤❗️
+    🍉
+
+    ❗️ 🔈 channelId 🔡 msg 🔡 🍇
+        📫http 🍪🔤/api/channels/🔤 channelId 🔤/messages🔤🍪
+               🔤application/json🔤
+               🍪🔤{"content":"🔤msg🔤"}🔤🍪❓
+    🍉
+
+    ❗️ 💞 event 🔡 callable 🍇⚪🍉 🍇
+        ↪️ ❎🐣handlers event❗️❗ 🍇
+            🆕🍨🐚🍇⚪🍉🍆🐸❗️ ➡️ 🐽handlers event❗️
+        🍉
+        🖍🆕 list 🍨🐚🍇⚪🍉🍆
+        🍺🐽handlers event️❗️ ➡️ 🖍list
+        🐻list callable❗️
+        list ➡️ 🐽handlers event❗️
+    🍉
+
+    🔐❗️ 🔥 event 🔡 obj ⚪️ 🍇
+        ↪️ 🐣handlers event❗️ 🍇
+            🔂 h 🍺🐽handlers event❗️ 🍇
+                ⁉️h obj❗️
+            🍉
+        🍉 
+    🍉
+
+    ❗️ 🏃 🍇
+        🔤wss://gateway.discord.gg/?v=6&encoding=json🔤 ➡️ wsuri
+        🍪🔤
+            {
+                "op": 2,
+                "d": {
+                    "token": "🔤 token 🔤",
+                    "properties": {
+                        "$os": "linux",
+                        "$browser": "Emojicord",
+                        "$device": "Emojicord"
+                    }
+                }
+            }
+        🔤🍪 ➡️ identify
+
+        🆕🦁🆕 wsuri❗ ➡️ client
+        🆕🔐🆕❗️ ➡️ wssMut
+
+        🏃client 🍇msg🔡
+            🆕🌵🆕msg❗️ ➡️ json
+            ↪️ 10 🙌 🔢json 🔤op🔤❓ 🍇
+                🗣client identify❗️
+                🔢🌵json 🔤d🔤❓ 🔤heartbeat_interval🔤❓  ➡ ️tMilli 
+                tMilli ✖️ 1000 ➡️ nMicro
+                🆕🧵🆕🍇
+                    🔁 👍 🍇
+                        ⏲🐇🧵nMicro❗️
+                        🔒wssMut❗️
+                        🗣client 🔤{"op": 1, "d": null}🔤❗️
+                        🔓wssMut❗️
+                    🍉
+                🍉❗️
+            🍉
+
+            🔒wssMut❗️
+
+            🌵json 🔤d🔤❓ ➡️ d
+
+            ↪️ 🔤MESSAGE_CREATE🔤 🙌 🔡json 🔤t🔤❓ 🍇
+                🌵d 🔤author🔤❓ ➡️ author
+                
+                🔡d      🔤content🔤❓   ➡ ️content
+                🔡author 🔤username🔤❓  ➡ user
+                🔡d      🔤channel_id🔤❓➡️ channelId
+
+                🔥🐕 🔤message🔤 🆕🖊🆕user content channelId❗️❗️
+            🍉
+            🔓wssMut❗️
+        🍉❗️
+
+    🍉
+
+🍉
