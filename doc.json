@@ -5,7 +5,7 @@
             "name": "🖊",
             "conformances": [],
             "genericParameters": [],
-            "documentation": " Type representing a message (currently stripped down) ",
+            "documentation": "Message",
             "methods": [
                 {
                     "name": "👤",
@@ -99,7 +99,7 @@
             "name": "🔌",
             "conformances": [],
             "genericParameters": [],
-            "documentation": " Main class providing access to Discord API ",
+            "documentation": "Discord Client",
             "methods": [
                 {
                     "name": "🔈",
