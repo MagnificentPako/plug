@@ -5,6 +5,7 @@
     🖍🆕 content   🔡
     🖍🆕 channelId 🔡
 
+    📗Construct a message given the author, content, and channel ID📗
     🆕 🍼 author 🔡 🍼 content 🔡 🍼 channelId 🔡 🍇🍉
 
     📗 Returns the author 📗
