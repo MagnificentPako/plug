@@ -1,5 +1,7 @@
 # 🔌
 
+![https://img.shields.io/badge/docs--blue.svg](https://determined-roentgen-236172.netlify.com/)
+
 A simple (and incomplete) discord lib written in [Emojicode](https://www.emojicode.org/)
 
 Note that this uses my emojicode [nix-expr](https://gist.github.com/MagnificentPako/ff66a6c2f0703ad842a58f703eb09665) 
