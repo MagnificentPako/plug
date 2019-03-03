@@ -1,0 +1,36 @@
+<h1>{{name}}</h1>
+<h3>{{documentation}}</h2>
+<hr>
+<h2>Initializers</h2>
+<ul class="doc">
+    {{#each initializers as |i|}}
+    <li>
+        <div>
+            <h1>{{i.name}}</h1>
+            <p>Declaration</p>
+            <code>{{i.name}}{{../name}}{{#each parameters}} {{name}}
+                {{type.name}}
+                {{/each}}</code>
+            <p>{{i.documentation}}</p>
+        </div>
+    </li>
+    {{/each}}
+</ul>
+<hr>
+<h2>Methods</h2>
+<ul class="doc">
+    {{#each methods as |m|}}
+    {{#unlessPrivate m}}
+    <li>
+        <div>
+            <h1>{{m.name}}{{m.mood}}</h1>
+            <p>Declaration</p>
+            <code>{{m.mood}} {{m.name}} {{#each parameters as |p|}}{{p.name}}
+                {{p.type.name}} {{/each}}{{#unlessNoReturn m}} ➡
+                {{m.returnType.name}}{{/unlessNoReturn}}</code>
+            <p>{{m.documentation}}</p>
+        </div>
+    </li>
+    {{/unlessPrivate}}
+    {{/each}}
+</ul>

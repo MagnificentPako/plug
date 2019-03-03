@@ -1,0 +1,9 @@
+{
+  "name": "emojidoc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^4.1.0"
+  }
+}
