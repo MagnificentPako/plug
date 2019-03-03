@@ -64,6 +64,7 @@
                     "mutating": true,
                     "final": false,
                     "genericParameters": [],
+                    "documentation": "Construct a message given the author, content, and channel ID",
                     "parameters": [
                         {
                             "type": {
