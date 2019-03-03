@@ -7,24 +7,17 @@ stdenv.mkDerivation {
                   (import "/home/paul/doc/dev/Cpp/emojicode-net")
                   openssl
                   zlib
-                  nodejs
-                  yarn
                 ];
 
   buildPhase = ''
     emojicodec main.🍇 -S $EMOJICODE_PATH
-    emojicodec main.🍇 -S $EMOJICODE_PATH -r > docgen/doc.json
-    cd docgen
-    yarn
-    node index.js
-    cd ..
+    emojicodec main.🍇 -S $EMOJICODE_PATH -r > doc.json
   '';
 
   installPhase = ''
     mkdir $out -p
-    mkdir $out/docs -p
     cp main $out  
-    cp -r docgen/out/* $out/docs
+    cp doc.json $out
   '';
 
 }
