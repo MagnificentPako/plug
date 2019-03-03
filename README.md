@@ -1,6 +1,6 @@
 # 🔌
 
-[https://img.shields.io/badge/docs--blue.svg](https://determined-roentgen-236172.netlify.com/)
+[https://determined-roentgen-236172.netlify.com/](https://img.shields.io/badge/docs--blue.svg)
 
 A simple (and incomplete) discord lib written in [Emojicode](https://www.emojicode.org/)
 
